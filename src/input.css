@@ -7,7 +7,7 @@
     @apply text-4xl leading-loose;
   }
   h2 {
-    @apply text-2xl leading-relaxed font-bold;
+    @apply text-2xl leading-loose font-bold;
   }
   h3 {
     @apply text-xl leading-relaxed;
