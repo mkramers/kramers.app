@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Matt Kramers' personal website",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "tailwindcss -i ./src/input.css -o ./src/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/tailwind.css && cp ./src/index.html ./dist/index.html"
   },
   "author": "Matt Kramers",
   "license": "MIT",
