@@ -1,0 +1,422 @@
+<!doctype html>
+<html class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matt Kramers | Software Developer</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script>
+      function setIsDark(isDark) {
+        if (isDark) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      }
+    </script>
+  </head>
+  <body
+    class="transition ease-in delay-75 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300 min-w-[250px]"
+  >
+    <nav
+      class="fixed w-full py-2 px-4 backdrop-blur-[1px] rounded-3xl min-w-[250px]"
+    >
+      <div class="flex flex-row justify-between items-center">
+        <a
+          href="javascript:location.reload()"
+          class="border-solid border-b-4 border-gray-800 dark:border-gray-300 transition ease-in delay-75"
+        >
+          <img
+            class="object-scale-down h-10 box-content"
+            src="../images/duck.webp"
+            alt="Duck"
+          />
+        </a>
+        <div class="flex flex-row justify-end items-center gap-8">
+          <a href="https://github.com/mkramers" target="_blank">
+            <svg
+              class="w-6 h-6 hover:drop-shadow-2xl hover:overflow-visible fill-black dark:fill-white transition ease-in delay-75"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12Z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/matt-kramers" target="_blank">
+            <svg
+              class="w-6 h-6 hover:drop-shadow-2xl hover:overflow-visible fill-black dark:fill-white transition ease-in delay-75"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5ZM8 19H5V8h3v11ZM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764ZM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="block dark:hidden transition ease-in delay-75"
+            onclick="setIsDark(true); return false;"
+          >
+            <svg
+              class="w-6 h-6 hover:drop-shadow-2xl hover:overflow-visible fill-black dark:fill-white"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.6 13.375ZM13.1 23h-2.6l.5-.312q.5-.313 1.088-.7.587-.388 1.087-.7l.5-.313q2.025-.15 3.738-1.225 1.712-1.075 2.712-2.875-2.15-.2-4.075-1.087-1.925-.888-3.45-2.413-1.525-1.525-2.425-3.45Q9.275 8 9.1 5.85 7.175 6.925 6.088 8.812 5 10.7 5 12.9v.3l-.3.137q-.3.138-.662.288-.363.15-.663.287l-.3.138q-.05-.275-.062-.575Q3 13.175 3 12.9q0-3.65 2.325-6.438Q7.65 3.675 11.25 3q-.45 2.475.275 4.837.725 2.363 2.5 4.138t4.138 2.5q2.362.725 4.837.275-.65 3.6-3.45 5.925Q16.75 23 13.1 23ZM6 21h4.5q.625 0 1.062-.438Q12 20.125 12 19.5t-.425-1.062Q11.15 18 10.55 18h-1.3l-.5-1.2q-.35-.825-1.1-1.312Q6.9 15 6 15q-1.25 0-2.125.863Q3 16.725 3 18q0 1.25.875 2.125T6 21Zm0 2q-2.075 0-3.537-1.462Q1 20.075 1 18q0-2.075 1.463-3.538Q3.925 13 6 13q1.5 0 2.738.812 1.237.813 1.837 2.188Q12 16.05 13 17.062q1 1.013 1 2.438 0 1.45-1.025 2.475Q11.95 23 10.5 23Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="hidden dark:block transition ease-in delay-75"
+            href="#"
+            onclick="setIsDark(false); return false;"
+          >
+            <svg
+              class="w-6 h-6 hover:drop-shadow-2xl hover:overflow-visible fill-black dark:fill-white"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.088 13.126 24 12l-1.912-1.126a2.172 2.172 0 0 1-.788-2.942L22.393 6l-2.22-.02a2.171 2.171 0 0 1-2.153-2.153L18 1.608l-1.932 1.093a2.172 2.172 0 0 1-2.941-.788L12 0l-1.127 1.913a2.172 2.172 0 0 1-2.941.788L6 1.608l-.02 2.219A2.171 2.171 0 0 1 3.827 5.98L1.607 6 2.7 7.932a2.172 2.172 0 0 1-.788 2.942L0 12l1.912 1.126a2.172 2.172 0 0 1 .788 2.942L1.607 18l2.22.02a2.171 2.171 0 0 1 2.153 2.153L6 22.392l1.932-1.093a2.172 2.172 0 0 1 2.941.788L12 24l1.127-1.913a2.172 2.172 0 0 1 2.941-.788L18 22.392l.02-2.219a2.173 2.173 0 0 1 2.153-2.153l2.22-.02-1.093-1.932a2.172 2.172 0 0 1 .788-2.942ZM11.971 20c-4.411 0-8-3.589-8-8s3.588-8 8-8 8 3.589 8 8-3.589 8-8 8ZM12 18a6 6 0 0 1 0-12v12Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="container mx-auto flex flex-col gap-12 py-40 px-10 sm:px-20 md:px-32 lg:px-56 xl:px-80 2xl:px-96"
+      >
+        <header>
+          <h1>Hello<span class="text-green-600">.</span></h1>
+        </header>
+        <section class="flex flex-col w-full gap-2">
+          <h2>
+            My name is
+            <span>
+              <strong class="text-3xl">Matt Kramers</strong>
+            </span>
+          </h2>
+          <h3 class="text-gray-600 dark:text-gray-400 font-semibold">
+            Software Developer
+          </h3>
+          <p>
+            I’ve been working for about 8 years in the healthcare technology
+            space. My work is primarily focused on medical imaging software
+            applications, both on desktop and web.
+          </p>
+          <p>
+            Outside of coding, I enjoy listening to music and adventuring
+            outside.
+          </p>
+        </section>
+
+        <section class="flex flex-col w-full gap-2">
+          <h2>Writing</h2>
+          <p>Some interesting things...</p>
+        </section>
+
+        <section class="flex flex-col w-full gap-2">
+          <h2>Projects</h2>
+          <p>Some interesting things...</p>
+        </section>
+
+        <section class="flex flex-col w-full gap-2">
+          <h2>Experience</h2>
+          <ul class="space-y-10">
+            <li>
+              <ul class="space-y-4">
+                <li>
+                  <div class="flex flex-row items-center gap-4">
+                    <img
+                      class="object-scale-down h-6 box-content"
+                      src="../images/altis.webp"
+                      alt="Altis Labs, Inc."
+                    />
+                    <div class="flex-1">
+                      <h3 class="font-bold leading-tight">Altis Labs, Inc.</h3>
+                      <h4
+                        class="text-gray-600 dark:text-gray-400 font-semibold"
+                      >
+                        Lead Software Developer, Toronto
+                      </h4>
+                    </div>
+                    <span class="font-bold text-sm text-center"
+                      >2019 - Present</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <ul class="space-y-2 list-disc pl-4">
+                    <li>
+                      <span class="font-bold">Founding Technical Role</span>: As
+                      the initial technical hire, I led various aspects of web
+                      development.
+                    </li>
+
+                    <li>
+                      <span class="font-bold">Medical Imaging Platform</span>:
+                      Designed, built, and maintained a comprehensive medical
+                      imaging platform:
+                    </li>
+                    <li class="list-none">
+                      <ul class="space-y-2 list-disc pl-6">
+                        <li>
+                          <span class="font-bold">Frontend</span>: Developed a
+                          <span class="font-bold">React</span> +
+                          <span class="font-bold">Typescript</span> interface
+                          with <span class="font-bold">GraphQL</span> (<span
+                            class="font-bold"
+                            >Apollo</span
+                          >).
+                        </li>
+                        <li>
+                          <span class="font-bold">APIs</span>: Created
+                          context-specific
+                          <span class="font-bold">Node</span> (<span
+                            class="font-bold"
+                            >Express</span
+                          >) and <span class="font-bold">Python</span> (<span
+                            class="font-bold"
+                            >FastAPI</span
+                          >) APIs.
+                        </li>
+                        <li>
+                          <span class="font-bold">Task Pipeline</span>:
+                          Implemented a distributed
+                          <span class="font-bold">Celery</span> task system.
+                        </li>
+                        <li>
+                          <span class="font-bold">Database</span>: Managed a
+                          <span class="font-bold">PostgreSQL</span> database
+                          with 100+ tables.
+                        </li>
+                        <li>
+                          <span class="font-bold">Docker & Deployment</span>:
+                          Utilized <span class="font-bold">Docker</span> for
+                          local development and
+                          <span class="font-bold">AWS</span> deployment managed
+                          by <span class="font-bold">Terraform</span>.
+                        </li>
+                        <li>
+                          <span class="font-bold">AWS Security</span>:
+                          Established a security-focused
+                          <span class="font-bold">AWS</span> infrastructure.
+                        </li>
+                        <li>
+                          <span class="font-bold">CI/CD Automation</span>: Set
+                          up <span class="font-bold">GitHub Actions</span> for
+                          automated CI/CD.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="font-bold">Process Establishment</span>:
+                      Introduced internal development processes and authored the
+                      organization's quality management system.
+                    </li>
+                    <li>
+                      <span class="font-bold"
+                        >Mentorship and Team Management</span
+                      >: Guided research-oriented ML team in SDLC and MLOps,
+                      while recruiting, mentoring, and managing team members.
+                      Fostered relationships with product owners, users, and
+                      advisors to enhance product quality.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="space-y-4">
+                <li>
+                  <div class="flex flex-row items-center gap-4">
+                    <img
+                      class="object-scale-down h-6 box-content"
+                      src="../images/focal.webp"
+                      alt="Focal Healthcare, Inc."
+                    />
+                    <div class="flex-1">
+                      <h3 class="font-bold leading-tight">
+                        Focal Healthcare Inc.
+                      </h3>
+                      <h4
+                        class="text-gray-600 dark:text-gray-400 font-semibold"
+                      >
+                        Lead Software Developer, Toronto
+                      </h4>
+                    </div>
+                    <span class="font-bold text-sm text-center"
+                      >2014 - 2019</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <ul class="space-y-2 list-disc pl-4">
+                    <li>
+                      As Focal's inaugural employee, led end-to-end software
+                      design and development for two cutting-edge medical
+                      devices
+                    </li>
+                    <li>
+                      Created and maintained <span class="font-bold">C#</span>
+                      <span class="font-bold">WPF</span> desktop software with
+                      advanced medical image visualization, 3D image
+                      reconstruction, semi-automated segmentation/registration,
+                      and user interface design
+                    </li>
+                    <li>
+                      Managed a team of 7 developers, excelled in project
+                      management, established internal processes, and ensured
+                      <span class="font-bold">FDA 510k</span>/<span
+                        class="font-bold"
+                        >ISO 13485</span
+                      >/<span class="font-bold">IEC 62304</span> compliant
+                      software development with complete DevOps implementation
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="space-y-4">
+                <li>
+                  <div class="flex flex-row items-center gap-4 -ml-6">
+                    <img
+                      class="block dark:hidden transition ease-in delay-75 object-scale-down h-6 box-content"
+                      src="../images/robarts.webp"
+                      alt="Robarts Research Institute"
+                    />
+                    <img
+                      class="hidden dark:block transition ease-in delay-75 object-scale-down h-6 box-content"
+                      src="../images/robarts-light.webp"
+                      alt="Robarts Research Institute"
+                    />
+                    <div class="flex-1">
+                      <h3 class="font-bold leading-tight">
+                        Robarts Research Institute
+                      </h3>
+                      <h4
+                        class="text-gray-600 dark:text-gray-400 font-semibold"
+                      >
+                        Summer Research Student, London
+                      </h4>
+                    </div>
+                    <span class="font-bold text-sm text-center">2012</span>
+                  </div>
+                </li>
+                <li>
+                  <ul class="space-y-2 list-disc pl-4">
+                    <li>
+                      Developed a <span class="font-bold">C#</span>
+                      <span class="font-bold">WinForms</span> desktop
+                      application for evaluating human performance using a
+                      prostate biopsy device
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="flex flex-col w-full gap-2">
+          <h2>Education</h2>
+          <ul class="space-y-10">
+            <li>
+              <ul class="space-y-4">
+                <li>
+                  <div class="flex flex-row items-center gap-4">
+                    <img
+                      class="object-scale-down h-6 box-content"
+                      src="../images/western.webp"
+                      alt="Western University"
+                    />
+                    <div class="flex-1">
+                      <h3 class="font-bold leading-tight">
+                        The University of Western Ontario
+                      </h3>
+                      <h4
+                        class="text-gray-600 dark:text-gray-400 font-semibold"
+                      >
+                        M.E.Sc. Biomedical Engineering - Fenster/Eagleson
+                      </h4>
+                    </div>
+                    <span class="font-bold text-sm text-center"
+                      >2012 - 2014</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <ul class="space-y-2 list-disc pl-4">
+                    <li>
+                      Thesis focused on
+                      <span class="font-bold"
+                        >Evaluating Human Performance for Image-Guided Surgical
+                        Tasks</span
+                      >
+                    </li>
+                    <li>
+                      Developed a mobile augmented reality app for neurosurgical
+                      guidance on <span class="font-bold">Android</span> devices
+                      using <span class="font-bold">Java</span> and
+                      <span class="font-bold">OpenGL</span>.
+                    </li>
+                    <li>
+                      Created a human performance evaluation pipeline for
+                      image-guided medical devices using custom
+                      <span class="font-bold">C#</span>
+                      <span class="font-bold">WinForms</span> applications.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="space-y-4">
+                <li>
+                  <div class="flex flex-row items-center gap-4">
+                    <img
+                      class="object-scale-down h-6 box-content"
+                      src="../images/western.webp"
+                      alt="Western University"
+                    />
+                    <div class="flex-1">
+                      <h3 class="font-bold leading-tight">
+                        The University of Western Ontario
+                      </h3>
+                      <h4
+                        class="text-gray-600 dark:text-gray-400 font-semibold"
+                      >
+                        B.E.Sc. Electrical and Computer Engineering
+                      </h4>
+                    </div>
+                    <span class="font-bold text-sm text-center"
+                      >2007 - 2012</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <ul class="space-y-2 list-disc pl-4">
+                    <li>
+                      Capstone Project:
+                      <span class="font-bold"
+                        >Prostate Biopsy Procedure Performance Evaluator and
+                        Replay Application</span
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
