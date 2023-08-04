@@ -6,7 +6,7 @@
     "dev": "tailwindcss -i ./src/input.css -o ./src/tailwind.css --watch",
     "clean": "rimraf ./dist",
     "compile": "tailwindcss -i ./src/input.css -o ./src/tailwind.css",
-    "package": "copyfiles -f ./src/*.html ./src/*.css -e ./src/input.css ./dist && copyfiles ./src/images/* ./dist/images",
+    "package": "copyfiles -f ./src/*.html ./src/*.css -e ./src/input.css ./dist && copyfiles -f ./src/images/* ./dist/images",
     "build": "npm-run-all clean compile package"
   },
   "author": "Matt Kramers",
