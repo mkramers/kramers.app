@@ -18,54 +18,62 @@
   <body
     class="transition ease-in delay-75 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300 min-w-[250px]"
   >
-    <dialog id="dialog" class="rounded-2xl">
-      <section class="pt-8 pb-4 px-4 rounded-2xl flex flex-col gap-4">
-        <p>This site was created by Matt Kramers with:</p>
-        <div class="flex flex-row flex-wrap gap-4 max-w-lg py-2">
+    <dialog
+      id="dialog"
+      class="rounded-2xl shadow-2xl bg-white dark:bg-gray-900"
+    >
+      <section
+        class="pt-8 pb-4 px-4 flex flex-col gap-4 text-gray-800 dark:text-gray-300"
+      >
+        <p>
+          This site was created by
+          <span class="font-bold">Matt Kramers</span> with:
+        </p>
+        <div class="flex flex-row flex-wrap justify-center gap-4 max-w-lg py-2">
           <img
             class="object-scale-down w-10 h-10 box-content block dark:hidden"
             src="images/html.webp"
             alt="HTML5"
+            title="HTML5"
           />
           <img
             class="object-scale-down w-10 h-10 box-content hidden dark:block"
             src="images/html-dark.webp"
             alt="HTML5"
+            title="HTML5"
           />
           <img
             class="object-scale-down w-10 h-10 box-content"
             src="images/javascript.webp"
             alt="JavaScript"
+            title="JavaScript"
           />
           <img
             class="object-scale-down w-10 h-10 box-content"
             src="images/tailwind.webp"
             alt="Tailwind CSS"
+            title="Tailwind CSS"
           />
           <img
             class="object-scale-down w-10 h-10 box-content"
             src="images/github-actions.webp"
             alt="GitHub Actions"
+            title="GitHub Actions"
           />
           <img
             class="object-scale-down w-10 h-10 box-content"
             src="images/cloudflare.webp"
             alt="Cloudflare Pages"
+            title="Cloudflare Pages"
           />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 h-10 fill-red-600"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-            />
-          </svg>
         </div>
-        <form method="dialog" class="mx-auto">
+        <form
+          method="dialog"
+          class="flex flex-row justify-center items-center gap-4"
+        >
+          <!--          <a href="#" class="underline font-semibold">Read More</a>-->
           <button
-            class="bg-black rounded-2xl px-4 py-1 text-white font-semibold"
+            class="bg-green-600 text-white rounded-2xl px-4 py-1 font-semibold"
           >
             Close
           </button>
@@ -87,17 +95,6 @@
           />
         </a>
         <div class="flex flex-row justify-end items-center gap-8">
-          <a href="#" onclick="window.dialog.showModal();">
-            <svg
-              class="w-6 h-6 hover:drop-shadow-2xl hover:overflow-visible fill-black dark:fill-white transition ease-in delay-75"
-              viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-              />
-            </svg>
-          </a>
           <a href="https://github.com/mkramers" target="_blank">
             <svg
               class="w-6 h-6 hover:drop-shadow-2xl hover:overflow-visible fill-black dark:fill-white transition ease-in delay-75"
@@ -451,7 +448,7 @@
     </main>
 
     <footer class="w-full flex flex-row justify-center py-6 px-4">
-      <a href="#" onclick="window.dialog.showModal();">
+      <a href="#" onclick="window.dialog.showModal(); return false;">
         <svg
           class="w-6 h-6 hover:drop-shadow-2xl hover:overflow-visible fill-black dark:fill-white transition ease-in delay-75"
           viewBox="0 0 16 16"
