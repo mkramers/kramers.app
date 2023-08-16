@@ -7,8 +7,8 @@
     "dev:11ty": "eleventy --serve --input ./src",
     "dev:css": "tailwindcss -i ./src/input.css -o ./src/tailwind.css --watch",
     "build": "run-s build:*",
-    "build:11ty": "eleventy --input ./src",
-    "build:css": "tailwindcss -i ./src/input.css -o ./src/tailwind.css"
+    "build:css": "tailwindcss -i ./src/input.css -o ./src/tailwind.css",
+    "build:11ty": "eleventy --input ./src"
   },
   "author": "Matt Kramers",
   "license": "MIT",
