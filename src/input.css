@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-4xl leading-loose;
-  }
-  h2 {
-    @apply text-2xl leading-loose font-bold;
-  }
-  h3 {
-    @apply text-xl leading-relaxed text-blue-500;
-  }
   dialog::backdrop {
     backdrop-filter: blur(3px);
   }
