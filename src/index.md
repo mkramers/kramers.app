@@ -1,3 +1,7 @@
+---
+layout: layout.html
+---
+
 # Hello<span class="text-green-600">.</span>
 
 ## My name is <strong class="text-3xl">Matt Kramers</strong>
