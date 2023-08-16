@@ -10,11 +10,8 @@
     @apply text-2xl leading-loose font-bold;
   }
   h3 {
-    @apply text-xl leading-relaxed;
+    @apply text-xl leading-relaxed text-blue-500;
   }
-}
-
-@layer base {
   dialog::backdrop {
     backdrop-filter: blur(3px);
   }
