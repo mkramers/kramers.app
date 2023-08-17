@@ -1,6 +1,4 @@
 ## Stack
-
-### Work
 During my time at **Altis Labs**, I've had the opportunity to work in depth with a wide variety of technologies. I've listed some of the more notable ones below.
 - Frontend: **React + Typescript (Hooks, Context, Redux, Apollo)**
 - Backend: **Node (Express), Python (FastAPI), GraphQL (Hasura)**
@@ -9,10 +7,6 @@ During my time at **Altis Labs**, I've had the opportunity to work in depth with
 - Testing: **Jest, pytest, Cypress, Postman**
 - Integrations: **Auth0, Sentry, LaunchDarkly, SendGrid, MixPanel, Google Analytics**
 - Other: **Celery, RabbitMQ, Serverless, JetBrains, Git, Linux, Bash, Material UI, Figma, Linear, Notion, Slack, Google Workspace**
-
-### Personal
-I like to use personal projects as an opportunity to learn new technologies.
-- Frameworks/Utilities: **NextJS, Tailwind CSS, 11ty**  
 
 ## Experience
 
