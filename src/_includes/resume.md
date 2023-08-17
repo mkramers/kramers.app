@@ -8,7 +8,6 @@ During my time at **Altis Labs**, I've had the opportunity to work in depth with
 - Integrations: **Auth0, Sentry, LaunchDarkly, SendGrid, MixPanel, Google Analytics**
 - Other: **Celery, RabbitMQ, Serverless, JetBrains, Git, Linux, Bash, Material UI, Figma, Linear, Notion, Slack, Google Workspace**
 
-
 ## Experience
 
 ### Altis Labs, Inc.
