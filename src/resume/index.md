@@ -1,0 +1,1 @@
+{% renderFile "./src/_includes/resume.md" %}

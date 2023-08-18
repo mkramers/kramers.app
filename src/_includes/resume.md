@@ -1,5 +1,11 @@
+# Matt Kramers
+
+**Software Developer** | **[matt@altislabs.com](matt@altislabs.com)** | **Ontario, Canada**
+
+---
+
 ## Stack
-During my time at **Altis Labs**, I've had the opportunity to work in depth with a wide variety of technologies. I've listed some of the more notable ones below.
+During my time at **Altis Labs**, I've had the opportunity to work at depth with a wide variety of technologies. I've listed some of the more notable ones below.
 - Frontend: **React + Typescript (Hooks, Context, Redux, Apollo)**
 - Backend: **Node (Express), Python (FastAPI), GraphQL (Hasura)**
 - Database: **PostgreSQL, DynamoDB, SQLite**
