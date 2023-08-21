@@ -16,7 +16,14 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ## Experience
 
-### Altis Labs, Inc.
+### {% renderTemplate "webc" %} <img
+            webc:is="eleventy-image"
+            width="16"
+            style="display: inline; margin: 0 0.625rem 0 0;"
+            src="./src/images/altis.webp"
+            alt="Altis Labs, Inc."
+            title="Altis Labs, Inc."
+          /> {% endrenderTemplate %} Altis Labs, Inc.
 
 #### Lead Software Developer, Toronto
 
@@ -34,7 +41,14 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 - **Process Establishment**: Introduced internal development processes and authored the organization's quality management system.
 - **Mentorship and Team Management**: Guided research-oriented ML team in SDLC and MLOps, while recruiting, mentoring, and managing team members. Fostered relationships with product owners, users, and advisors to enhance product quality.
 
-### Focal Healthcare Inc.
+### {% renderTemplate "webc" %} <img
+            webc:is="eleventy-image"
+            width="16"
+            style="display: inline; margin: 0 0.625rem 0 0;"
+            src="./src/images/focal.webp"
+            alt="Focal Healtchare Inc."
+            title="Focal Healtchare Inc."
+          /> {% endrenderTemplate %} Focal Healthcare Inc.
 
 #### Lead Software Developer, Toronto
 
@@ -44,7 +58,14 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 - Created and maintained **C#** **WPF** desktop software with advanced medical image visualization, 3D image reconstruction, semi-automated segmentation/registration, and user interface design.
 - Managed a team of 7 developers, excelled in project management, established internal processes, and ensured **FDA 510k**/**ISO 13485**/**IEC 62304** compliant software development with complete DevOps implementation.
 
-### Robarts Research Institute
+### {% renderTemplate "webc" %} <img
+            webc:is="eleventy-image"
+            width="16"
+            style="display: inline; margin: 0 0.625rem 0 0;"
+            src="./src/images/robarts.webp"
+            alt="Robarts Research Institute"
+            title="Robarts Research Institute"
+          /> {% endrenderTemplate %} Robarts Research Institute
 
 #### Summer Research Student, London
 
@@ -54,7 +75,13 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ## Education
 
-### The University of Western Ontario
+### {% renderTemplate "webc" %} <img
+            webc:is="eleventy-image"
+            width="16"
+            style="display: inline; margin: 0 0.625rem 0 0;"
+            src="./src/images/western.webp"
+            alt="The University of Western Ontario"
+          /> {% endrenderTemplate %} The University of Western Ontario
 
 #### M.E.Sc. Biomedical Engineering - Fenster/Eagleson
 
@@ -64,7 +91,13 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 - Developed a mobile augmented reality app for neurosurgical guidance on Android devices using Java and **OpenGL**.
 - Created a human performance evaluation pipeline for image-guided medical devices using custom **C#** **WinForms** applications.
 
-### The University of Western Ontario
+### {% renderTemplate "webc" %} <img
+            webc:is="eleventy-image"
+            width="16"
+            style="display: inline; margin: 0 0.625rem 0 0;"
+            src="./src/images/western.webp"
+            alt="The University of Western Ontario"
+          /> {% endrenderTemplate %} The University of Western Ontario
 
 #### B.E.Sc. Electrical and Computer Engineering
 
