@@ -1,13 +1,66 @@
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const Image = require("@11ty/eleventy-img");
+const eleventyWebcPlugin = require("@11ty/eleventy-plugin-webc");
+const { eleventyImagePlugin } = require("@11ty/eleventy-img");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(EleventyRenderPlugin);
-  eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
-  eleventyConfig.addPassthroughCopy("./src/images");
+
+  // WebC
+  eleventyConfig.addPlugin(eleventyWebcPlugin, {
+    components: [
+      // …
+      // Add as a global WebC component
+      "npm:@11ty/eleventy-img/*.webc",
+    ],
+  });
+
+  // Image plugin
+  eleventyConfig.addPlugin(eleventyImagePlugin, {
+    // Set global default options
+    formats: ["webp", "jpeg"],
+    urlPath: "/img/",
+    sizes: [16],
+
+    // Notably `outputDir` is resolved automatically
+    // to the project output directory
+
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+    },
+  });
+
+  // eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+  // eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/tailwind.css");
   eleventyConfig.addPassthroughCopy("./src/markdown.css");
 
   eleventyConfig.addPairedShortcode("resume", formatResume);
+
+  // eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
+  //   let metadata = await Image(src, {
+  //     widths: ["auto"],
+  //     formats: ["webp"],
+  //     outputDir: "./_site/img/",
+  //   });
+  //
+  //   let imageAttributes = {
+  //     alt,
+  //     sizes,
+  //     loading: "lazy",
+  //     decoding: "async",
+  //   };
+  //
+  //   // You bet we throw an error on a missing alt (alt="" works okay)
+  //   return Image.generateHTML(metadata, imageAttributes);
+  // });
+  return {
+    dir: {
+      input: "src",
+    },
+    // htmlTemplateEngine: "webc",
+  };
 };
 
 function formatResume(originalContent) {
