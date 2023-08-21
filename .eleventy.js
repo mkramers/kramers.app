@@ -6,7 +6,6 @@ const { eleventyImagePlugin } = require("@11ty/eleventy-img");
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 
-  // WebC
   eleventyConfig.addPlugin(eleventyWebcPlugin, {
     components: ["npm:@11ty/eleventy-img/*.webc"],
   });
@@ -24,23 +23,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/tailwind.css");
   eleventyConfig.addPassthroughCopy("./src/markdown.css");
-
-  eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
-    let metadata = await Image(src, {
-      widths: ["auto"],
-      formats: ["webp"],
-      outputDir: "./_site/img/",
-    });
-
-    let imageAttributes = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-    };
-
-    return Image.generateHTML(metadata, imageAttributes);
-  });
 
   return {
     dir: {
