@@ -22,7 +22,8 @@ module.exports = (eleventyConfig) => {
   // required for legacy page
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/tailwind.css");
-  eleventyConfig.addPassthroughCopy("./src/markdown.css");
+  eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
+  eleventyConfig.addPassthroughCopy({ "./src/images/favicon.ico": "/" });
 
   return {
     dir: {
