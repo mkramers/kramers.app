@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:webc="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../images/favicon-16x16.png"
+      href="./src/images/favicon-16x16.png"
     />
     <link rel="manifest" href="../../site.webmanifest" />
     <style>
@@ -56,11 +56,14 @@
     >
       <div class="flex flex-row justify-between items-center">
         <a href="javascript:location.reload()">
+          {% renderTemplate "webc" %}
           <img
-            class="object-scale-down h-10 box-content"
-            src="../../images/duck.webp"
+            webc:is="eleventy-image"
+            width="40"
+            src="./src/images/duck.webp"
             alt="Duck"
           />
+          {% endrenderTemplate %}
         </a>
         <div class="flex flex-row justify-end items-center gap-8">
           <a href="#" onclick="window.dialog.showModal(); return false;">
@@ -150,54 +153,69 @@
           <span class="font-bold">Matt Kramers</span> with:
         </p>
         <div class="flex flex-row flex-wrap justify-center gap-4 max-w-lg py-2">
+          {% renderTemplate "webc" %}
           <img
-            class="object-scale-down w-10 h-10 box-content block dark:hidden"
-            src="../../images/html.webp"
+            webc:is="eleventy-image"
+            class="block dark:hidden"
+            width="40"
+            src="./src/images/html.webp"
+            alt="HTML5"
+            title="HTML5"
+          />
+
+          <img
+            webc:is="eleventy-image"
+            width="40"
+            class="hidden dark:block"
+            src="./src/images/html-dark.webp"
             alt="HTML5"
             title="HTML5"
           />
           <img
-            class="object-scale-down w-10 h-10 box-content hidden dark:block"
-            src="../../images/html-dark.webp"
-            alt="HTML5"
-            title="HTML5"
-          />
-          <img
-            class="object-scale-down w-10 h-10 box-content"
-            src="../../images/javascript.webp"
+            webc:is="eleventy-image"
+            width="40"
+            src="./src/images/javascript.webp"
             alt="JavaScript"
             title="JavaScript"
           />
           <img
-            class="object-scale-down w-10 h-10 box-content"
-            src="../../images/tailwind.webp"
+            webc:is="eleventy-image"
+            width="40"
+            src="./src/images/tailwind.webp"
             alt="Tailwind CSS"
             title="Tailwind CSS"
           />
           <img
-            class="object-scale-down w-10 h-10 box-content block dark:hidden"
-            src="../../images/11ty.webp"
+            webc:is="eleventy-image"
+            class="block dark:hidden"
+            width="40"
+            src="./src/images/11ty.webp"
             alt="11ty"
             title="11ty"
           />
           <img
-            class="object-scale-down w-10 h-10 box-content hidden dark:block"
-            src="../../images/11ty-dark.webp"
+            webc:is="eleventy-image"
+            width="40"
+            class="hidden dark:block"
+            src="./src/images/11ty-dark.webp"
             alt="11ty"
             title="11ty"
           />
           <img
-            class="object-scale-down w-10 h-10 box-content"
-            src="../../images/github-actions.webp"
+            webc:is="eleventy-image"
+            width="40"
+            src="./src/images/github-actions.webp"
             alt="GitHub Actions"
             title="GitHub Actions"
           />
           <img
-            class="object-scale-down w-10 h-10 box-content"
-            src="../../images/cloudflare.webp"
+            webc:is="eleventy-image"
+            width="40"
+            src="./src/images/cloudflare.webp"
             alt="Cloudflare Pages"
             title="Cloudflare Pages"
           />
+          {% endrenderTemplate %}
         </div>
         <form
           method="dialog"

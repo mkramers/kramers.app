@@ -8,23 +8,12 @@ module.exports = (eleventyConfig) => {
 
   // WebC
   eleventyConfig.addPlugin(eleventyWebcPlugin, {
-    components: [
-      // …
-      // Add as a global WebC component
-      "npm:@11ty/eleventy-img/*.webc",
-    ],
+    components: ["npm:@11ty/eleventy-img/*.webc"],
   });
 
-  // Image plugin
   eleventyConfig.addPlugin(eleventyImagePlugin, {
-    // Set global default options
-    formats: ["webp", "jpeg"],
+    formats: ["webp"],
     urlPath: "/img/",
-    sizes: [16],
-
-    // Notably `outputDir` is resolved automatically
-    // to the project output directory
-
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",
@@ -33,7 +22,7 @@ module.exports = (eleventyConfig) => {
 
   // eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
   // eleventyConfig.addPassthroughCopy("./src/images");
-  eleventyConfig.addPassthroughCopy("./src/tailwind.css");
+  // eleventyConfig.addPassthroughCopy("./src/tailwind.css");
   eleventyConfig.addPassthroughCopy("./src/markdown.css");
 
   eleventyConfig.addPairedShortcode("resume", formatResume);
@@ -59,7 +48,6 @@ module.exports = (eleventyConfig) => {
     dir: {
       input: "src",
     },
-    // htmlTemplateEngine: "webc",
   };
 };
 
