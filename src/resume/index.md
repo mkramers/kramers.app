@@ -1,1 +1,0 @@
-{% include "./resume.md" %}

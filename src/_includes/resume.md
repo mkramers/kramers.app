@@ -1,6 +1,8 @@
 # Matt Kramers
 
-**Software Developer** | **[matt@altislabs.com](matt@altislabs.com)** | **Ontario, Canada**
+**Software Developer** | **[matt@altislabs.com](mailto:matt@altislabs.com)** | **Ontario, Canada**
+
+[GitHub](https://github.com/mkramers) | [LinkedIn](https://www.linkedin.com/in/matt-kramers) | [Website](https://kramers.app)
 
 ---
 
@@ -18,8 +20,8 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="20"
-            style="display: inline; margin: 0 0.625rem 0 0;"
+            width="16"
+            style="display: inline; margin: 0 0.4rem 0 0;"
             src="./src/images/altis.webp"
             alt="Altis Labs, Inc."
             title="Altis Labs, Inc."
@@ -43,8 +45,8 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="20"
-            style="display: inline; margin: 0 0.625rem 0 0;"
+            width="16"
+            style="display: inline; margin: 0 0.4rem 0 0;"
             src="./src/images/focal.webp"
             alt="Focal Healtchare Inc."
             title="Focal Healtchare Inc."
@@ -60,8 +62,8 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="20"
-            style="display: inline; margin: 0 0.625rem 0 0;"
+            width="16"
+            style="display: inline; margin: 0 0.4rem 0 0;"
             src="./src/images/robarts.webp"
             alt="Robarts Research Institute"
             title="Robarts Research Institute"
@@ -77,8 +79,8 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="20"
-            style="display: inline; margin: 0 0.625rem 0 0;"
+            width="16"
+            style="display: inline; margin: 0 0.4rem 0 0;"
             src="./src/images/western.webp"
             alt="The University of Western Ontario"
           /> {% endrenderTemplate %} The University of Western Ontario
@@ -93,8 +95,8 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="20"
-            style="display: inline; margin: 0 0.625rem 0 0;"
+            width="16"
+            style="display: inline; margin: 0 0.4rem 0 0;"
             src="./src/images/western.webp"
             alt="The University of Western Ontario"
           /> {% endrenderTemplate %} The University of Western Ontario
