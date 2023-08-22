@@ -18,7 +18,7 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="16"
+            width="20"
             style="display: inline; margin: 0 0.625rem 0 0;"
             src="./src/images/altis.webp"
             alt="Altis Labs, Inc."
@@ -43,7 +43,7 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="16"
+            width="20"
             style="display: inline; margin: 0 0.625rem 0 0;"
             src="./src/images/focal.webp"
             alt="Focal Healtchare Inc."
@@ -60,7 +60,7 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="16"
+            width="20"
             style="display: inline; margin: 0 0.625rem 0 0;"
             src="./src/images/robarts.webp"
             alt="Robarts Research Institute"
@@ -77,7 +77,7 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="16"
+            width="20"
             style="display: inline; margin: 0 0.625rem 0 0;"
             src="./src/images/western.webp"
             alt="The University of Western Ontario"
@@ -93,7 +93,7 @@ During my time at **Altis Labs**, I've had the opportunity to work at depth with
 
 ### {% renderTemplate "webc" %} <img
             webc:is="eleventy-image"
-            width="16"
+            width="20"
             style="display: inline; margin: 0 0.625rem 0 0;"
             src="./src/images/western.webp"
             alt="The University of Western Ontario"
