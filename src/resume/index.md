@@ -1,1 +1,1 @@
-{% renderFile "./src/_includes/resume.md" %}
+{% include "./resume.md" %}

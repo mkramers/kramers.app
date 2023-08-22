@@ -25,9 +25,16 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
   eleventyConfig.addPassthroughCopy({ "./src/images/favicon.ico": "/" });
 
+  eleventyConfig.addPairedShortcode("resume", formatResume);
+
   return {
     dir: {
       input: "src",
     },
   };
 };
+
+function formatResume(content) {
+  const lines = content.split("\n");
+  return lines.slice(lines.indexOf("---")).join("\n");
+}
