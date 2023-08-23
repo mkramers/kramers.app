@@ -26,7 +26,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
   eleventyConfig.addPassthroughCopy({ "./src/images/favicon.ico": "/" });
 
-  eleventyConfig.addPairedShortcode("resume", formatResume);
+  eleventyConfig.addPairedShortcode("cropResume", cropResume);
+  eleventyConfig.addPairedShortcode("insertResumeImages", insertResumeImages);
 
   eleventyConfig.on(
     "eleventy.after",
@@ -43,20 +44,26 @@ module.exports = (eleventyConfig) => {
   };
 };
 
-function formatResume(content) {
+function cropResume(content) {
   const lines = content.split("\n");
   return lines.slice(lines.indexOf("---")).join("\n");
 }
 
+function insertResumeImages(content) {
+  return content;
+}
+
 async function writePdf(inputFilepath, outputFilepath) {
   // Create a browser instance
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: "new" });
 
   // Create a new page
   const page = await browser.newPage();
 
   //Get HTML content from HTML file
-  const html = fs.readFileSync(inputFilepath, "utf-8");
+  let html = fs.readFileSync(inputFilepath, "utf-8");
+  html = html.replace('src="/img/', 'src="../img/');
+
   await page.setContent(html, { waitUntil: "domcontentloaded" });
 
   // To reflect CSS used for screens instead of print
