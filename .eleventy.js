@@ -61,6 +61,27 @@ async function insertResumeImages(content) {
       alt: "Altis Labs, Inc.",
       title: "Altis Labs, Inc.",
     },
+    {
+      level: "###",
+      header: "Focal Healthcare Inc.",
+      src: "./src/images/focal.webp",
+      alt: "Focal Healthcare Inc.",
+      title: "Focal Healthcare Inc.",
+    },
+    {
+      level: "###",
+      header: "Robarts Research Institute",
+      src: "./src/images/robarts.webp",
+      alt: "Robarts Research Institute",
+      title: "Robarts Research Institute",
+    },
+    {
+      level: "###",
+      header: "The University of Western Ontario",
+      src: "./src/images/western.webp",
+      alt: "The University of Western Ontario",
+      title: "The University of Western Ontario",
+    },
   ];
 
   async function getIconImgTag(src, alt, title) {
