@@ -14,7 +14,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPlugin(eleventyImagePlugin, {
     formats: ["webp"],
-    urlPath: "/img/",
+    urlPath: "./img/",
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",
@@ -25,7 +25,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/tailwind.css");
   eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
-  eleventyConfig.addPassthroughCopy({ "./src/images/favicon.ico": "/" });
+  eleventyConfig.addPassthroughCopy({
+    "./src/images/favicon.ico": "./favicon.ico",
+  });
 
   eleventyConfig.addPairedShortcode("cropResume", cropResume);
   eleventyConfig.addPairedShortcode("insertResumeImages", insertResumeImages);
@@ -65,14 +67,8 @@ async function insertResumeImages(content) {
     const metadata = await Image(src, {
       widths: [16],
       formats: ["webp"],
+      outputDir: "./_site/img/",
     });
-
-    const imageAttributes = {
-      alt,
-      size: [16],
-      loading: "lazy",
-      decoding: "async",
-    };
 
     const data = metadata.webp[metadata.webp.length - 1];
     return `<img src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}"  title="${title}" style="display: inline; margin: 0 0.4rem 0 0;" loading="lazy" decoding="async">`;
