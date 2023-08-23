@@ -123,7 +123,6 @@ async function writePdf(inputFilepath, outputFilepath) {
 
   //Get HTML content from HTML file
   let html = fs.readFileSync(inputFilepath, "utf-8");
-  html = html.replace('src="/img/', 'src="../img/');
 
   await page.setContent(html, { waitUntil: "domcontentloaded" });
 
