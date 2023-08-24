@@ -21,8 +21,6 @@ module.exports = (eleventyConfig) => {
     },
   });
 
-  // required for legacy page
-  eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/tailwind.css");
   eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
   eleventyConfig.addPassthroughCopy({
@@ -96,7 +94,7 @@ async function insertResumeImages(content) {
   }
 
   const lines = content.split("\n");
-  const a = await Promise.all(
+  const withImages = await Promise.all(
     lines.map(async (line) => {
       const icon = icons.find(
         ({ level, header }) => line === `${level} ${header}`,
@@ -110,8 +108,7 @@ async function insertResumeImages(content) {
     }),
   );
 
-  // console.log("a", a);
-  return a.join("\n");
+  return withImages.join("\n");
 }
 
 async function writePdf(inputFilepath, outputFilepath) {
