@@ -26,17 +26,31 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({
     "./src/images/favicon.ico": "./favicon.ico",
   });
+  eleventyConfig.addPassthroughCopy({
+    "./src/images/android-chrome-192x192.png":
+      "./img/android-chrome-192x192.png",
+  });
+  eleventyConfig.addPassthroughCopy({
+    "./src/images/android-chrome-512x512.png":
+      "./img/android-chrome-512x512.png",
+  });
+  eleventyConfig.addPassthroughCopy({
+    "./src/images/apple-touch-icon.png": "./img/apple-touch-icon.png",
+  });
+  eleventyConfig.addPassthroughCopy({
+    "./src/images/favicon-16x16.png": "./img/favicon-16x16.png",
+  });
+  eleventyConfig.addPassthroughCopy({
+    "./src/images/favicon-32x32.png": "./img/favicon-32x32.png",
+  });
 
   eleventyConfig.addPairedShortcode("cropResume", cropResume);
   eleventyConfig.addPairedShortcode("insertResumeImages", insertResumeImages);
 
-  eleventyConfig.on(
-    "eleventy.after",
-    async ({ dir, results, runMode, outputMode }) => {
-      const { input, includes, output } = dir;
-      await writePdf(`${output}/resume/index.html`, `${output}/resume.pdf`);
-    },
-  );
+  eleventyConfig.on("eleventy.after", async ({ dir }) => {
+    const { output } = dir;
+    await writePdf(`${output}/resume/index.html`, `${output}/resume.pdf`);
+  });
 
   return {
     dir: {
