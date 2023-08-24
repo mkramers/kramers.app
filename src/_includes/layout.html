@@ -51,95 +51,9 @@
   <body
     class="transition ease-in delay-75 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300 min-w-[250px]"
   >
-    {% renderFile "./src/_includes/nav-bar.html" %}
-    <dialog
-      id="dialog"
-      class="rounded-2xl shadow-2xl bg-white dark:bg-gray-900"
-    >
-      <section
-        class="pt-8 pb-4 px-4 flex flex-col gap-4 text-gray-800 dark:text-gray-300"
-      >
-        <p>
-          This site was created by
-          <span class="font-bold">Matt Kramers</span> with:
-        </p>
-        <div class="flex flex-row flex-wrap justify-center gap-4 max-w-lg py-2">
-          {% renderTemplate "webc" %}
-          <img
-            webc:is="eleventy-image"
-            class="block dark:hidden"
-            width="40"
-            src="./src/images/html.webp"
-            alt="HTML5"
-            title="HTML5"
-          />
+    {% renderFile "./src/_includes/nav-bar.html" %} {% renderFile
+    "./src/_includes/info-dialog.html" %}
 
-          <img
-            webc:is="eleventy-image"
-            width="40"
-            class="hidden dark:block"
-            src="./src/images/html-dark.webp"
-            alt="HTML5"
-            title="HTML5"
-          />
-          <img
-            webc:is="eleventy-image"
-            width="40"
-            src="./src/images/javascript.webp"
-            alt="JavaScript"
-            title="JavaScript"
-          />
-          <img
-            webc:is="eleventy-image"
-            width="40"
-            src="./src/images/tailwind.webp"
-            alt="Tailwind CSS"
-            title="Tailwind CSS"
-          />
-          <img
-            webc:is="eleventy-image"
-            class="block dark:hidden"
-            width="40"
-            src="./src/images/11ty.webp"
-            alt="11ty"
-            title="11ty"
-          />
-          <img
-            webc:is="eleventy-image"
-            width="40"
-            class="hidden dark:block"
-            src="./src/images/11ty-dark.webp"
-            alt="11ty"
-            title="11ty"
-          />
-          <img
-            webc:is="eleventy-image"
-            width="40"
-            src="./src/images/github-actions.webp"
-            alt="GitHub Actions"
-            title="GitHub Actions"
-          />
-          <img
-            webc:is="eleventy-image"
-            width="40"
-            src="./src/images/cloudflare.webp"
-            alt="Cloudflare Pages"
-            title="Cloudflare Pages"
-          />
-          {% endrenderTemplate %}
-        </div>
-        <form
-          method="dialog"
-          class="flex flex-row justify-center items-center gap-4"
-        >
-          <button
-            class="bg-green-600 text-white rounded-2xl px-4 py-1 font-semibold"
-          >
-            Close
-          </button>
-        </form>
-      </section>
-    </dialog>
     <main
       class="container mx-auto pt-40 pb-24 px-2 prose dark:prose-invert prose-h3:font-bold prose-h3:leading-tight prose-h4:text-gray-600 prose-h4:dark:text-gray-400 prose-h1:font-normal prose-h4:font-semibold prose-h5:font-bold prose-h5:text-sm"
     >
