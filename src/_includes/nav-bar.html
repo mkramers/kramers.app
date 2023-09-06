@@ -2,7 +2,7 @@
   <div class="flex flex-row justify-between items-start">
     <a
       href="javascript:location.reload()"
-      class="flex flex-row items-center gap-4"
+      class="flex flex-row items-center gap-4 rounded-3xl backdrop-blur-sm p-2 px-4 bg-gray-500/30"
     >
       {% renderTemplate "webc" %}
       <!--suppress XmlUnboundNsPrefix -->
@@ -16,9 +16,9 @@
       <span class="font-semibold text-xl tracking-tight">kramers.app</span>
     </a>
     <div class="flex flex-col justify-end items-end gap-4">
-      <div class="block lg:hidden mt-[13px]">
+      <div class="block lg:hidden mt-[21px]">
         <button
-          class="flex lg:hidden items-center px-3 py-2 rounded text-black dark:text-white backdrop-blur-sm bg-gray-500/30"
+          class="flex lg:hidden items-center p-2 px-4 rounded-3xl text-black dark:text-white backdrop-blur-sm bg-gray-500/30"
           onclick="toggleNavBarExpanded(event)"
         >
           <svg
