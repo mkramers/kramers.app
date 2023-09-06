@@ -77,17 +77,27 @@
         }
       }
 
+      function onScroll() {
+        const isLg = isScreenLg();
+        if (!isLg) {
+          collapseNavBar();
+        }
+      }
+
       function expandNavBar() {
         const container = document.querySelector("#navbar_items");
-        const items = container.querySelectorAll("a");
-        items.forEach((item) => item.classList.remove("hidden"));
+        container.classList.remove("hidden");
+        // const items = container.querySelectorAll("a");
+        // items.forEach((item) => item.classList.remove("hidden"));
         isNavBarExpanded = true;
       }
 
       function collapseNavBar() {
         const container = document.querySelector("#navbar_items");
-        const items = container.querySelectorAll("a");
-        items.forEach((item) => item.classList.add("hidden"));
+        container.classList.add("hidden");
+        // const items = container.querySelectorAll("a");
+        // items.forEach((item) => item.classList.add("hidden"));
+
         isNavBarExpanded = false;
       }
 
@@ -101,6 +111,7 @@
 
       window.onresize = onWindowResize;
       window.onload = onLoad;
+      window.onscroll = onScroll;
     </script>
     <title>Matt Kramers | Software Developer</title>
   </head>
