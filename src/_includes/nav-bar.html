@@ -1,7 +1,5 @@
 <nav>
-  <div
-    class="fixed top-0 left-0 rounded-3xl backdrop-blur-sm m-6 py-1 px-4 bg-gray-500/30"
-  >
+  <div class="fixed top-6 left-6 backdrop-blur-[1px] rounded-3xl">
     <a
       href="javascript:location.reload()"
       class="flex flex-row gap-4 items-center"
@@ -10,15 +8,16 @@
       <!--suppress XmlUnboundNsPrefix -->
       <img
         webc:is="eleventy-image"
-        width="54"
+        width="42"
         src="./src/images/duck.webp"
         alt="Duck"
       />
       {% endrenderTemplate %}
-      <span class="font-semibold text-xl tracking-tight">kramers.app</span>
     </a>
   </div>
-  <div class="fixed top-6 right-6 block lg:hidden">
+  <div
+    class="fixed top-6 right-6 block lg:hidden backdrop-blur-[1px] rounded-3xl"
+  >
     <button
       class="flex items-center py-2 px-4"
       onclick="toggleNavBarExpanded(event)"
