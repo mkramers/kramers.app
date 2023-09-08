@@ -1,11 +1,3 @@
-# Matt Kramers
-
-**Software Developer** | **[mattkramers@gmail.com](mailto:mattkramers@gmail.com)** | **Ontario, Canada**
-
-[GitHub](https://github.com/mkramers) | [LinkedIn](https://www.linkedin.com/in/matt-kramers) | [Website](https://kramers.app)
-
----
-
 ## Stack
 During my time at **Altis Labs**, I've had the opportunity to work at depth with a wide variety of technologies. I've listed some of the more notable ones below.
 - Frontend: **React + Typescript (Hooks, Context, Redux, Apollo)**

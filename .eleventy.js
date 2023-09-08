@@ -44,7 +44,6 @@ module.exports = (eleventyConfig) => {
     "./src/images/favicon-32x32.png": "./img/favicon-32x32.png",
   });
 
-  eleventyConfig.addPairedShortcode("cropResume", cropResume);
   eleventyConfig.addPairedShortcode("insertResumeImages", insertResumeImages);
 
   eleventyConfig.on("eleventy.after", async ({ dir }) => {
@@ -58,11 +57,6 @@ module.exports = (eleventyConfig) => {
     },
   };
 };
-
-function cropResume(content) {
-  const lines = content.split("\n");
-  return lines.slice(lines.indexOf("---")).join("\n");
-}
 
 async function insertResumeImages(content) {
   const icons = [
