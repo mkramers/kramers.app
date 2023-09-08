@@ -64,6 +64,14 @@
 
       collapseNavBar();
     });
+
+    const infoDialog = document.getElementById("infoDialog");
+    infoDialog.addEventListener("click", () => infoDialog.close());
+
+    const infoDialogArea = document.getElementById("infoDialogArea");
+    infoDialogArea.addEventListener("click", (event) =>
+      event.stopPropagation(),
+    );
   }
 
   function expandNavBar() {
